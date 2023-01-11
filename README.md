@@ -1,24 +1,7 @@
-# 鳥擊
+# Vue 3 + Vite
 
-## 系統說明
+This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
 
--   Node.js 版本 `^18.7.0`
--   react 版本 `^18.2.0`
--   vite 版本 `^3.2.3`
+## Recommended IDE Setup
 
-## 資料夾說明
-
-```
-|- /src
-    |- /api
-        |- /modules：依種類分 api
-    |- /asset：共用文件
-        |- /icons：global icons
-        |- /images：圖片
-    |- /components：共用元件
-    |- /utils：共用邏輯(不含 hook)
-    |- /hooks：custom hooks
-    |- /layouts：佈局
-    |- /routers：控制路由
-    |- /views：主頁面
-```
+- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
