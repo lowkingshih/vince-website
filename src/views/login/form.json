@@ -1,0 +1,19 @@
+{
+    "LOGIN": [
+        {
+            "modal": "Account",
+            "name": "account",
+            "initvalue": "aaa@gmail.com"
+        },
+        {
+            "modal": "Password",
+            "name": "password",
+            "initvalue": "1234567"
+        },
+        {
+            "modal": "Captcha",
+            "name": "captcha",
+            "initvalue": "QQAA"
+        }
+    ]
+}
