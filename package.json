@@ -8,14 +8,19 @@
     "build": "vite build",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "@vant/touch-emulator": "^1.4.0",
     "gh-pages": "^4.0.0",
-    "vue": "^3.2.45"
+    "normalize.css": "^8.0.1",
+    "vant": "^4.0.7",
+    "vue": "^3.2.45",
+    "vue-router": "^4.1.6"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.0.0",
+    "sass": "^1.57.1",
     "vite": "^4.0.0"
   }
 }

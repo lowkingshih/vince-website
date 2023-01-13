@@ -1,0 +1,7 @@
+@mixin rwd($point) {
+	@if $point == pad {
+		@media (min-width: 768px) {
+			@content
+		}
+	}
+}

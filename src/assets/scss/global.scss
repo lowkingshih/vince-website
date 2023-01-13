@@ -1,0 +1,5 @@
+.pad-hidden {
+    @include rwd(pad) {
+        display: none !important;
+}
+}
