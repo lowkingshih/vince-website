@@ -70,13 +70,13 @@ import { RouterLink } from 'vue-router';
         width: 49%;
         box-sizing: border-box;
         margin-bottom: 8px;
+        overflow: hidden;
 
         position: relative;
 
         img {
             display: block;
             object-fit: contain;
-            overflow: hidden;
             transition: width 0.7s;
             width: 100%;
 
@@ -107,11 +107,11 @@ import { RouterLink } from 'vue-router';
     .img_wrap {
         width: 100%;
         position: relative;
+        overflow: hidden;
 
         img {
             display: block;
             object-fit: contain;
-            overflow: hidden;
             transition: width 0.7s;
             width: 100%;
 

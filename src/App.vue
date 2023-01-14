@@ -43,6 +43,7 @@ watch(active, (curVal) => {
 @import '@/assets/scss/global.scss';
 
 body {
+    padding-top: 52.8px;
     padding-bottom: 50px;
     @include rwd(pad) {
         padding: 0;
@@ -54,9 +55,14 @@ body {
     padding: 8px 15px;
 }
 header.main_header {
-    width: calc(100vw - 35px);
+    width: calc(100vw - 34px);
     margin: 0;
     padding: 8px 16px;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 2;
 
     background-color: #004f99;
     h1 {
@@ -95,7 +101,7 @@ footer {
     }
 }
 section {
-    padding: 16px 0;
+    padding-bottom: 16px;
     h2 {
         text-align: center;
     }

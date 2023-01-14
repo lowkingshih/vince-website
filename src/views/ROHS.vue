@@ -7,7 +7,7 @@
             </div>
             <ul class="list">
                 <li class="item">
-                    <a href="/xlsx/ROHS.xlsx" target="_blank">ROHS標章 (點擊下載)</a>
+                    <a href="/xlsx/ROHS.xlsx" target="_blank">ROHS標章</a>
                 </li>
             </ul>
         </div>
