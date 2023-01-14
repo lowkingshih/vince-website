@@ -11,6 +11,9 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src') // 路径别名
     }
   },
+  server: {
+      host: '0.0.0.0'
+  },
   plugins: [vue()],
   css: {
     preprocessorOptions: {
