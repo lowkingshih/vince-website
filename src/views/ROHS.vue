@@ -7,7 +7,7 @@
             </div>
             <ul class="list">
                 <li class="item">
-                    <a href="/xlsx/ROHS.xlsx" target="_blank">ROHS標章</a>
+                    <a href="/pdf/ROHS.pdf" target="_blank">ROHS標章</a>
                 </li>
             </ul>
         </div>

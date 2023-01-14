@@ -42,6 +42,15 @@ const router = createRouter({
             name: 'ROHS',
             component: () => import('/src/views/ROHS.vue'),
         },
+        {
+            path: '/NotFound',
+            name: 'NotFound',
+            component: () => import('@/views/404.vue'),
+        },
+        {
+            path: '/:pathMatch(.*)*',
+            redirect: () => ({ name: 'NotFound' }),
+        },
     ],
 });
 

@@ -1,6 +1,6 @@
 <template>
     <!-- ADD ON BUTTON -->
-    <BackNav title="商品資訊" />
+    <BackNav title="產品資訊" />
     <div class="addOnButton_container">
         <div class="card">
             <div class="imgWrap">

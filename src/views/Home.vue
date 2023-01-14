@@ -72,6 +72,8 @@ onUnmounted(() => {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    max-width: 960px;
     .img_wrap {
         width: 49%;
         box-sizing: border-box;
@@ -79,6 +81,10 @@ onUnmounted(() => {
         overflow: hidden;
 
         position: relative;
+
+        @include rwd(pad) {
+            width: 19.5%;
+        }
 
         img {
             display: block;
