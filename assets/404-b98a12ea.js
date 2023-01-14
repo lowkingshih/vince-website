@@ -1,1 +1,0 @@
-const r={__name:"404",setup(t){var a=0,e=window.location;return e.replace(e.protocol+"//"+e.hostname+(e.port?":"+e.port:"")+e.pathname.split("/").slice(0,1+a).join("/")+"/?p=/"+e.pathname.slice(1).split("/").slice(a).join("/").replace(/&/g,"~and~")+(e.search?"&q="+e.search.slice(1).replace(/&/g,"~and~"):"")+e.hash),(n,c)=>null}};export{r as default};
