@@ -44,22 +44,28 @@
                     ><img src="@/assets/images/ROHS.webp" alt="ROSH" />
                 </RouterLink>
             </div>
-            <!-- <div class="card">
-                <div class="imgWrap ROHS">
-                    <img src="@/assets/images/ROHS.webp" alt="ROHS標章" />
-                </div>
-                <ul class="list">
-                    <li class="item">
-                        <a href="/xlsx/ROHS.xlsx" target="_blank">ROHS標章 (點擊下載)</a>
-                    </li>
-                </ul>
-            </div> -->
         </div>
     </section>
+    <van-tabbar class="pad-hidden" v-model="active">
+        <van-tabbar-item name="product" icon="orders-o">產品</van-tabbar-item>
+        <van-tabbar-item name="ROHS" icon="medal-o">產品認證</van-tabbar-item>
+        <van-tabbar-item name="contact" icon="phone-o">聯絡我們</van-tabbar-item>
+    </van-tabbar>
 </template>
 
 <script setup>
+import { ref, watch, onUnmounted } from 'vue';
 import { RouterLink } from 'vue-router';
+
+const active = ref('product');
+watch(active, (curVal) => {
+    location.hash = curVal;
+});
+
+onUnmounted(() => {
+    location.hash = '';
+    window.scrollTo(0, 0);
+});
 </script>
 <style lang="scss" scoped>
 .photo_wall {

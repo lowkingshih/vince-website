@@ -7,7 +7,7 @@
                 <img src="@/assets/images/ADD_ON_BLOCK.webp" />
             </div>
             <div class="title">
-                <h3>ADD ON BUTTON</h3>
+                <h3>ADD ON Block</h3>
             </div>
             <ul class="list">
                 <li class="item">

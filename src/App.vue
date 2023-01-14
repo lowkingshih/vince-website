@@ -1,13 +1,6 @@
 <script setup>
 // import Layout from '@/layout/Index.vue'
 import { RouterLink, RouterView, useRoute, useRouter } from 'vue-router';
-import { ref, watch } from 'vue';
-
-const router = useRouter();
-const active = ref('product');
-watch(active, (curVal) => {
-    location.hash = curVal;
-});
 </script>
 
 <template>
@@ -32,11 +25,6 @@ watch(active, (curVal) => {
         <van-back-top />
         <!-- <div class="pad-hidden"> -->
     </div>
-    <van-tabbar class="pad-hidden" v-model="active">
-        <van-tabbar-item name="product" icon="orders-o">產品</van-tabbar-item>
-        <van-tabbar-item name="ROHS" icon="medal-o">產品認證</van-tabbar-item>
-        <van-tabbar-item name="contact" icon="phone-o">聯絡我們</van-tabbar-item>
-    </van-tabbar>
 </template>
 
 <style lang="scss">
@@ -45,6 +33,7 @@ watch(active, (curVal) => {
 body {
     padding-top: 52.8px;
     padding-bottom: 50px;
+    // overflow: hidden;
     @include rwd(pad) {
         padding: 0;
     }
@@ -77,7 +66,8 @@ header.main_header {
     display: flex;
     flex-direction: column;
 
-    height: calc(100vh - 123px);
+    // 減去 body padding
+    height: calc(100vh - 52.8px);
     overflow-y: auto;
     overflow-x: hidden;
     scroll-behavior: smooth;
