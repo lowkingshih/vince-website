@@ -1,6 +1,15 @@
 <script setup>
-// import Layout from '@/layout/Index.vue'
+import { computed } from 'vue';
 import { RouterLink, RouterView, useRoute, useRouter } from 'vue-router';
+
+const route = useRoute();
+// 監測下方按鍵的高度
+const viewContainerHeight = computed(() => {
+    console.log('path.value:', route.path);
+    if (route.path === '/') return '102.8px';
+    else return '52.8px';
+});
+console.log('route:', { route });
 </script>
 
 <template>
@@ -30,13 +39,12 @@ import { RouterLink, RouterView, useRoute, useRouter } from 'vue-router';
 <style lang="scss">
 @import '@/assets/scss/global.scss';
 
+html {
+    overflow: hidden;
+}
 body {
     padding-top: 52.8px;
     padding-bottom: 50px;
-    // overflow: hidden;
-    @include rwd(pad) {
-        padding: 0;
-    }
 }
 </style>
 <style lang="scss">
@@ -67,7 +75,7 @@ header.main_header {
     flex-direction: column;
 
     // 減去 body padding
-    height: calc(100vh - 52.8px);
+    height: calc(100vh - v-bind(viewContainerHeight));
     overflow-y: auto;
     overflow-x: hidden;
     scroll-behavior: smooth;

@@ -74,6 +74,12 @@ onUnmounted(() => {
     justify-content: space-between;
 
     max-width: 960px;
+    margin: 0 auto;
+
+    @include rwd(pad) {
+        justify-content: space-around;
+    }
+
     .img_wrap {
         width: 49%;
         box-sizing: border-box;
@@ -83,7 +89,7 @@ onUnmounted(() => {
         position: relative;
 
         @include rwd(pad) {
-            width: 19.5%;
+            width: 18.5%;
         }
 
         img {
@@ -116,9 +122,15 @@ onUnmounted(() => {
     }
 }
 .rohs_photo {
+    @include rwd(pad) {
+        width: 960px;
+        margin: 0 auto;
+    }
     .img_wrap {
+        display: block;
+        margin: 0 auto;
         width: 100%;
-        position: relative;
+        max-width: 400px;
         overflow: hidden;
 
         img {
@@ -126,10 +138,6 @@ onUnmounted(() => {
             object-fit: contain;
             transition: width 0.7s;
             width: 100%;
-
-            &:hover {
-                width: 110%;
-            }
         }
         .content {
             position: absolute;
