@@ -1,5 +1,5 @@
 <script setup>
-import { computed } from 'vue';
+import { computed, onMounted, ref } from 'vue';
 import { RouterLink, RouterView, useRoute, useRouter } from 'vue-router';
 
 const route = useRoute();
@@ -9,14 +9,28 @@ const viewContainerHeight = computed(() => {
     if (route.path === '/') return '102.8px';
     else return '52.8px';
 });
-console.log('route:', { route });
+
+// 100vh safari 問題
+const viewContainerRef = ref(null);
+onMounted(() => {
+    function safariHacks() {
+        let windowsVH = window.innerHeight / 100;
+        viewContainerRef.value.style.setProperty('--vh', windowsVH + 'px');
+
+        window.addEventListener('resize', function () {
+            let windowsVH = window.innerHeight / 100;
+            viewContainerRef.value.style.setProperty('--vh', windowsVH + 'px');
+        });
+    }
+    safariHacks();
+});
 </script>
 
 <template>
     <header class="main_header">
         <h1>巨東科技</h1>
     </header>
-    <div class="main_container">
+    <div ref="viewContainerRef" class="main_container">
         <div class="view_container">
             <RouterView />
         </div>
@@ -80,12 +94,12 @@ header.main_header {
     flex-direction: column;
 
     // 減去 body padding
-    height: calc(100vh - v-bind(viewContainerHeight));
+    height: calc(var(--vh, 1vh) * 100 - v-bind(viewContainerHeight));
     overflow-y: auto;
     overflow-x: hidden;
     scroll-behavior: smooth;
     @include rwd(pad) {
-        height: calc(100vh - 71.2px);
+        height: calc(var(--vh, 1vh) * 100 - 71.2px);
     }
 }
 footer {

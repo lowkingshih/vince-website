@@ -58,13 +58,15 @@ import { ref, watch, onUnmounted } from 'vue';
 import { RouterLink } from 'vue-router';
 
 const active = ref('product');
+const offsetHs = {};
+const hashToTop = () => {};
 watch(active, (curVal) => {
     location.hash = curVal;
 });
 
 onUnmounted(() => {
     location.hash = '';
-    window.scrollTo(0, 0);
+    // window.scrollTo(0, 0);
 });
 </script>
 <style lang="scss" scoped>
