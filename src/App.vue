@@ -45,6 +45,10 @@ html {
 body {
     padding-top: 52.8px;
     padding-bottom: 50px;
+
+    @include rwd(pad) {
+        padding-top: 71.19px;
+    }
 }
 </style>
 <style lang="scss">
@@ -52,7 +56,8 @@ body {
     padding: 8px 15px;
 }
 header.main_header {
-    width: calc(100vw - 34px);
+    // width: calc(100vw - 34px);
+    width: 100%;
     margin: 0;
     padding: 8px 16px;
 
