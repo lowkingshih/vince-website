@@ -20,10 +20,10 @@
                     ><img src="@/assets/images/TIMER.webp" alt="Timer" />
                     <div class="content">TIMER</div></RouterLink
                 >
-                <!-- TRUNKING -->
+                <!-- TRUNCKING -->
                 <RouterLink to="/Trunking/product" class="img_wrap"
-                    ><img src="@/assets/images/TRUNKING.webp" alt="TRUNKING" />
-                    <div class="content">TRUNKING</div></RouterLink
+                    ><img src="@/assets/images/TRUNKING.webp" alt="TRUNCKING" />
+                    <div class="content">TRUNCKING</div></RouterLink
                 >
                 <!-- ADD ON BUTTON -->
                 <RouterLink to="/AddOnBlock/product" class="img_wrap"

@@ -7,11 +7,11 @@
                 <img src="@/assets/images/TRUNKING.webp" />
             </div>
             <div class="title">
-                <h3>TRUNKING</h3>
+                <h3>TRUNCKING</h3>
             </div>
             <ul class="list">
                 <li class="item">
-                    <a href="/pdf/TRUNKING.pdf" target="_blank">產品資訊</a>
+                    <a href="/pdf/TRUNCKING.pdf" target="_blank">產品資訊</a>
                 </li>
             </ul>
         </div>
