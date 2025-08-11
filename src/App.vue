@@ -37,8 +37,8 @@ onMounted(() => {
         <footer id="contact">
             <p>聯絡我們</p>
             <ul>
-                <li>TEL：(03)3978-525</li>
-                <li>FAX ：(03)3978-526</li>
+                <li>TEL: (03)3978-525</li>
+                <li>FAX: (03)3978-526</li>
                 <li>MP: 0910-109-687</li>
                 <li>E-MAIL: vince.shir@msa.hinet.net</li>
                 <li>Website: <a href="http://www.squliq.com">http://www.squliq.com</a></li>
